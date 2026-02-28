@@ -1,0 +1,40 @@
+#time{
+    font-size: 76px;
+}
+
+.container {
+  display: flex;        /* これが「横に並べ！」という魔法の言葉 */
+  justify-content: space-around; /* 左右にいい感じの隙間を空ける */
+  align-items: flex-start;      /* 上の位置を揃える */
+  padding: 20px;
+}
+
+#stopwatch, #calc-section {
+  border: 1px solid #ccc; /* 枠線で見やすく */
+  padding: 20px;
+  border-radius: 10px;    /* 角を丸く */
+  width: 45%;             /* 横幅を半分弱にする */
+  text-align: center;
+}
+
+.calc-buttons {
+display: grid; 
+  /* 4つの列を同じ幅（1fr）で繰り返す */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; 
+  padding: 10px;
+}
+
+.calc-buttons button {
+  padding: 15px 0;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.2s; /* マウスを乗せた時の動きを滑らかに */
+}
+
+.calc-buttons button:hover {
+  background-color: #f0f0f0;
+}
